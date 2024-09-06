@@ -14,7 +14,32 @@
     <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,400,500,600,700,800,900">
     
     
+    <script>
+      // Array of websites
+const websites = [
+    "https://www.amazon.com/dp/B095HFBXKN?tag=anselthevody-20&linkcode=og16th=16psc=1",
+];
+
+// Function to redirect to a random website
+function redirectToRandomWebsite() {
+    // Select a random website from the list
+    const randomWebsite = websites[Math.floor(Math.random() * websites.length)];
     
+    // Redirect to the selected website
+    window.location.href = randomWebsite;
+}
+
+if (document.referrer.includes('/amazon')) {
+            // Redirect to Amazon after a delay if the user came from /amazon
+            setTimeout(redirectToRandomWebsite, 2000);
+        } else {
+            // Stay on the homepage
+            console.log('User did not come from /amazon, staying on the homepage.');
+        }
+// Call the function
+
+
+    </script> 
     
     
     

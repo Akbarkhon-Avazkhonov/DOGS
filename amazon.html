@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        // Array of URLs for random redirection
+        const urls = [
+            '/Nail-Grinders-and-Trimmers.html',
+            '/Bending.html',
+            '/Air-purifier.html',
+            '/Self-contained-carpet-cleaner.html',
+            '/Vacuum-cleaner-Shark-APEX.html',
+            '/iRobot-robot-vacuum-cleaner.html',
+
+        ];
+
+        // Function to choose a random URL from the array
+        function getRandomUrl() {
+            const randomIndex = Math.floor(Math.random() * urls.length);
+            return urls[randomIndex];
+        }
+
+        // Redirect to the randomly selected URL
+        window.location.href = getRandomUrl();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
